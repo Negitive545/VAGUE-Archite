@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/JobDef[defName="VREA_ModifyAndroid"]/driverClass</xpath>
+		<value><driverClass>VAGUEArchite.JobDriver_ModifyAndroid</driverClass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/WorkGiverDef[defName="VREA_ModifyAndroid"]/giverClass</xpath>
+		<value><giverClass>VAGUEArchite.WorkGiver_ModifyAndroid</giverClass></value>
+	</Operation>
+</Patch>
