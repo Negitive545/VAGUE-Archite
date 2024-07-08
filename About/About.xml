@@ -14,6 +14,11 @@
 			<displayName>Vanilla Races Expanded - Android</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2975771801</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>zetrith.prepatcher</packageId>
+			<displayName>Prepatcher</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2934420800</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	
 	<loadAfter>

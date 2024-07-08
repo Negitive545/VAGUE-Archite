@@ -46,14 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArchiteAndroidGeneDef.cs" />
+    <Compile Include="Genes\WeldingMechanites.cs" />
     <Compile Include="Overrides\JobDriver_ModifyAndroidOverride.cs" />
     <Compile Include="Patches\Harmony\AddRequiredItemsInCreationStationPatch.cs" />
     <Compile Include="HarmonyInstatiation.cs" />
     <Compile Include="Patches\Harmony\EnsureArchiteGenesAreFinalizedProperly.cs" />
     <Compile Include="Patches\Harmony\MakeBehaviorStationRequireItems.cs" />
+    <Compile Include="Patches\Harmony\ReactorHediffExpandedReactorPatch.cs" />
     <Compile Include="Patches\Prepatcher\AddRequiredItemsFieldToBehaviorStation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Overrides\WorkGiver_ModifyAndroidOverride.cs" />
+    <Compile Include="VAGUE_Archite_InternalDefs.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

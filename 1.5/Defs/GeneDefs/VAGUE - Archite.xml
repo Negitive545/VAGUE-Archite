@@ -2,16 +2,14 @@
 
 <Defs>
 	<!-- Base archite gene, used for the rest. -->
-	<VAGUEArchite.ArchiteAndroidGeneDef Name="VAGUE_Archite_AndroidArchiteGeneBase" ParentName="VREA_SubroutineBase" Abstract="True">
-		
-		<!--
+	<VAGUEArchite.ArchiteAndroidGeneDef Name="VAGUE_Archite_AndroidArchiteGeneBase" Abstract="True">
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathXenogenes>UI/Icons/Genes/VAGUE_ArchiteBackground</backgroundPathXenogenes>
-				<backgroundPathEndogenes>UI/Icons/Genes/VAGUE_ArchiteBackground</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/ArchiteSubroutine</backgroundPathXenogenes>
+				<backgroundPathEndogenes>UI/Icons/Genes/ArchiteSubroutine</backgroundPathEndogenes>
 			</li>
 		</modExtensions>
-		-->
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<displayCategory>VREA_Subroutine</displayCategory>
 		<requiredItems/> <!-- List of ThingDefCount that has all the different extra items you need to use a given android gene. -->
 	</VAGUEArchite.ArchiteAndroidGeneDef>
@@ -28,6 +26,7 @@
 		<defName>VAGUE_Archite_VanometricReactor</defName>
 		<label>vanometric reactor</label>
 		<description>Overhauls the androids reactor to increase its power output without decreasing its lifespan. The mechanics of how this overhaul works aren't entirely known.</description>
+		<iconPath>UI/Icons/Genes/VAGUE_VanometricReactor</iconPath>
 		<biostatMet>6</biostatMet>
 		<requiredItems>
 			<ComponentSpacer>2</ComponentSpacer>
@@ -38,7 +37,7 @@
 		<defName>VAGUE_Archite_ExpandedReactor</defName>
 		<label>expanded reactor</label>
 		<description>By cramming an oversized reactor into the androids chassis, you can increase it's power lifespan. This does not however increase its efficiency</description>
-		<geneClass>VAGUEArchite.ExpandedReactor</geneClass>
+		<iconPath>UI/Icons/Genes/VAGUE_ExpandedReactor</iconPath>
 		<biostatMet>0</biostatMet>
 		<requiredItems>
 			<Uranium>20</Uranium>
@@ -49,6 +48,7 @@
 		<defName>VAGUE_Archite_WeldingMechanites</defName>
 		<label>welding mechanites</label>
 		<description>Androids with this archite subroutine have mechanites capable of welding materials together flowing in their neutroamine. This lets them slowly heal wounds passively</description>
+		<iconPath>UI/Icons/Genes/Gene_WoundHealingRateFast</iconPath>
 		<geneClass>VAGUEArchite.WeldingMechanites</geneClass>
 		<biostatMet>-4</biostatMet>
 		<requiredItems>
@@ -60,6 +60,7 @@
 		<defName>VAGUE_Archite_LuciferiumGene</defName>
 		<label>lucifer's bargain</label>
 		<description>By infusing the androids neutropump filters with luciferium mechanites, you can dramatically increase the androids productivity, all without risking the side effects of normal luciferium.</description>
+		<iconPath>UI/Icons/Genes/VAGUE_LuciferiumGene</iconPath>
 		<biostatMet>4</biostatMet>
 		<requiredItems>
 			<Luciferium>10</Luciferium>
@@ -85,6 +86,7 @@
 		<defName>VAGUE_Archite_AIPersonaGene</defName>
 		<label>personal persona processor</label>
 		<description>Androids with this subroutine have an AI persona core wired into their artificial brain, greatly expanding their data processing.</description>
+		<iconPath>UI/Icons/Genes/VAGUE_PersonaCore</iconPath>
 		<requiredItems>
 			<AIPersonaCore>1</AIPersonaCore>
 			<ComponentSpacer>5</ComponentSpacer>
@@ -102,6 +104,7 @@
 		<defName>VAGUE_Archite_EnhancedSight</defName>
 		<label>archite optical processors</label>
 		<description>Androids with this subroutine have greatly expanded visual capabilities</description>
+		<iconPath>UI/Icons/Genes/VAGUE_ArchiteSight</iconPath>
 		<requiredItems>
 			<ArchiteCapsule>2</ArchiteCapsule>
 		</requiredItems>
@@ -116,6 +119,7 @@
 		<defName>VAGUE_Archite_EnhancedManipulation</defName>
 		<label>archite manipulation sensors</label>
 		<description>Androids with this subroutine have greatly enhanced manipulatory sensors and motors, which grants them enhanced manipulation.</description>
+		<iconPath>UI/Icons/Genes/VAGUE_ArchiteManipulation</iconPath>
 		<requiredItems>
 			<ArchiteCapsule>2</ArchiteCapsule>
 		</requiredItems>
@@ -130,6 +134,7 @@
 		<defName>VAGUE_Archite_EnhancedMoving</defName>
 		<label>archite movement servos</label>
 		<description>Androids with this subroutine have bolstered movement servos, granting them increased movement</description>
+		<iconPath>UI/Icons/Genes/VAGUE_ArchiteMovement</iconPath>
 		<requiredItems>
 			<ArchiteCapsule>2</ArchiteCapsule>
 		</requiredItems>
@@ -142,7 +147,7 @@
 	</VAGUEArchite.ArchiteAndroidGeneDef>
 	<!--
 	<VAGUEArchite.ArchiteAndroidGeneDef ParentName="VAGUE_Archite_AndroidArchiteGeneBase">
-		<defName>VAGUE_Archite_EnourmousFrame</defName>
+		<defName>VAGUE_Archite_EnormousFrame</defName>
 		<label>expanded chassis</label>
 		<description>Androids with this subroutine are physically much larger than a normal human. This has a large number of effects.
 		
